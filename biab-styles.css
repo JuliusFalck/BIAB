@@ -1,0 +1,200 @@
+
+
+.main-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 7vh;
+    z-index: 100;
+    font-size: 3vh;
+    background-color: black;
+    color: white;
+    top: 0vh;
+    align-items: center;
+    text-decoration: underline;
+    
+}
+
+.dark-body{
+    background-color: black;
+
+}
+
+.main-view{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-view{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+
+.box{
+    gap: 0;
+    width: 36vw;
+    height: 36vw;
+    font-size: 0;
+
+}
+
+.cell{
+    width: 6vw;
+    height: 6vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.inputs{
+    display: grid;
+    width: 10vw;
+    height: 40vh;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.input-label{
+    font-size: 2vh;
+    color: white;
+    width: 3vw;
+}
+.input{
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    width: 5vw;
+    border-color: white;
+    
+
+}
+
+.tree{
+    font-size: 0;
+}
+
+.branch{
+    background-color: white;
+    position: absolute;
+    width: 0.2vw;
+    height: 0.2vw;
+}
+
+
+.bottom-view{
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.run-button{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 3vh;
+    width: 9vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    border-color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 45.5vw;
+    bottom: 14vh;
+}
+
+.scaledbox{
+    position: absolute;
+    right: 15vw;
+    bottom: 0;
+}
+
+
+
+.time-line{
+    color: white;
+    background-color: white;
+    width: 80vw;
+    height: 0;
+    margin: auto;
+}
+
+
+.current-line{
+    background-color: white;
+    position: absolute;
+    left: 60vw;
+    width: 32vw;
+    height: 0.2vw;
+}
+
+.time-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.ticks{
+    display: flex;
+    position: absolute;
+    bottom: 12vh;
+    left: 0;
+}
+
+.graph-svg{
+    position: absolute;
+    left: 10vw;
+    width: 80vw;
+    height: 6vh;
+    bottom: 2vh;
+}
+
+.time-line {
+    position: absolute;
+    left: 10vw;
+    bottom: 12vh;
+    z-index: 100;
+    width: 80%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 0.2vw;
+    background: white;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.5vw;
+    height: 3vw;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    appearance: none;
+    width: 0.5vw;
+    height: 3vw;
+    background: white;
+    cursor: pointer;
+  }
