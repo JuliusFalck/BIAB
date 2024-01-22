@@ -76,6 +76,7 @@ slider.oninput = function() {
   document.querySelector('#scaledCheckbox').addEventListener('click', event => {
 	scaled = !scaled;
 	make_tree();
+	set_state(slider.value-1);
   })
 
 function set_N(new_N){
